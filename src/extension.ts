@@ -9,7 +9,7 @@ export function activate({ subscriptions }: vscode.ExtensionContext) {
 	const myCommandId = 'ext.showSelectionCount';
 	subscriptions.push(vscode.commands.registerCommand(myCommandId, () => {
 		let n = getNumberOfSelectedLines(vscode.window.activeTextEditor);
-		vscode.window.showInformationMessage(`${n} line${n ? '(s)' : ''} selected...`);
+		vscode.window.showInformationMessage(`${n} line${n ? 's' : ''} selected.`);
 	}));
 
 	// create a new status bar item that we can now manage
@@ -29,7 +29,7 @@ export function activate({ subscriptions }: vscode.ExtensionContext) {
 function updateStatusBarItem(): void {
 	let n = getNumberOfSelectedLines(vscode.window.activeTextEditor);
 	if (n > 1) {
-		myStatusBarItem.text = `$(megaphone) ${n} line(s) selected`;
+		myStatusBarItem.text = `$(megaphone) ${n} lines`;
 		myStatusBarItem.show();
 	} else {
 		myStatusBarItem.hide();
