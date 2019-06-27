@@ -2,7 +2,7 @@
 	"name": "selected-lines-count",
 	"displayName": "Selected Lines Count",
 	"description": "Shows the number of selected lines in the status bar",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"publisher": "gurumukhi",
 	"repository": {
 		"type": "git",
