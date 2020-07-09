@@ -1,34 +1,35 @@
 {
-	"name": "selected-lines-count",
-	"displayName": "Selected Lines Count",
-	"description": "Shows the number of selected lines in the status bar",
-	"version": "0.2.0",
-	"publisher": "gurumukhi",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/gurumukhi/vscode-ext-lines-count"
-	},
-	"bugs": {
-		"url": "https://github.com/gurumukhi/vscode-ext-lines-count/issues"
-	},
-	"engines": {
-		"vscode": "^1.32.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"*"
-	],
-	"main": "./out/extension.js",
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"lint": "tslint -p ./",
-		"watch": "tsc -watch -p ./"
-	},
-	"devDependencies": {
-		"typescript": "^3.5.1",
-		"@types/vscode": "^1.32.0"
-	}
+  "name": "selected-lines-count",
+  "displayName": "Selected Lines Count",
+  "description": "Shows the number of selected lines in the status bar",
+  "version": "1.4.0",
+  "publisher": "gurumukhi",
+  "icon": "select-list.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gurumukhi/vscode-extension-line-count"
+  },
+  "bugs": {
+    "url": "https://github.com/gurumukhi/vscode-extension-line-count/issues"
+  },
+  "engines": {
+    "vscode": "^1.32.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "tslint -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^3.5.1",
+    "@types/vscode": "^1.32.0"
+  }
 }
