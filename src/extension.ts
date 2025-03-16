@@ -53,8 +53,8 @@ function getNumberOfSelectedLines(
   let lines = 0;
   if (editor) {
     lines = editor.selections.reduce(
-      (prev, curr) => prev + (curr.end.line - curr.start.line),
-      1
+      (prev, curr) => prev + (curr.end.line - curr.start.line) + 1,
+      0
     );
   }
   return lines;
